@@ -1,1 +1,3 @@
-import os_core
+import os_handler as command
+
+command.executeCommand("print")
