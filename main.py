@@ -11,7 +11,6 @@ except ImportError:
 else:
   print("")
 
-core.startup()
 
 com = input("> ")
 command.executeCommand(com)
