@@ -11,6 +11,7 @@ except ImportError:
 else:
   print("")
 
+core.registerService("os_handler")
 
 com = input("> ")
 command.executeCommand(com)
