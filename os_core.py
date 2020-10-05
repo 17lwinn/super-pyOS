@@ -1,3 +1,5 @@
+# The core module, handles the system services and more.
+
 import os
 import sys
 from time import *
