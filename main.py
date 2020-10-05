@@ -14,3 +14,4 @@ else:
 
 com = input("> ")
 command.executeCommand(com)
+core.registerService("os_handler")
