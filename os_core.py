@@ -4,5 +4,11 @@ from time import *
 import importlib
 
 def registerService(service):
+  try:
+    importlib.import_module(service)
+  except ModuleNotFoundError:
+    print("\033[1;37;41m" + "Error 1D: ServiceNotFound: " + service + "\033[0m")
+  else:
+    print()
   service = importlib.import_module(service)
   service.init()

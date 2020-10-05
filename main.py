@@ -11,7 +11,7 @@ except ImportError:
 else:
   print("")
 
-core.registerService("os_handler")
+core.registerService("example")
 
 com = input("> ")
 command.executeCommand(com)

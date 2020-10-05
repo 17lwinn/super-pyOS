@@ -10,7 +10,10 @@ core.registerService("package")
 
 To make a service module, create a file like this:
 
-> example.py
+---
+
+- example.py
+
 ```python
 import sys # <------ import any handy modules like sys
 
@@ -19,7 +22,13 @@ def init():
   sys.exit("hiya!")
 ```
 
-> main.py
-```python
+- main.py
 
+```python
+# the bottom half should look like this:
+
+core.registerService("example")
+
+com = input("> ")
+command.executeCommand(com)
 ```
