@@ -5,6 +5,7 @@ import sys
 
 def executeCommand(command):
   if command == "makeService":
+    import importlib
     name = input("filename without .py: ")
     print("checking code can be imported...")
     try:
@@ -12,10 +13,10 @@ def executeCommand(command):
     except ImportError:
       print("not found, aborting...")
     try:
-      print("checking init function is available..."):
+      print("checking init function is available...")
       service = importlib.import_module(name)
       service.init()
-    except NameError:
+    except AttributeError:
       print("init not found, aborting...")
 
     
