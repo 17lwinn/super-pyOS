@@ -2,6 +2,7 @@ import os_handler as command
 import os_core as core
 import importlib
 import sys
+from os_services import *
 
 try:
   importlib.import_module("os_core")

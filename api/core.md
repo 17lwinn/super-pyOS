@@ -22,13 +22,10 @@ def init():
   sys.exit("hiya!")
 ```
 
-- main.py
+- os_services
 
 ```python
-# the bottom half should look like this:
+# add them below this line
 
 core.registerService("example")
-
-com = input("> ")
-command.executeCommand(com)
 ```
