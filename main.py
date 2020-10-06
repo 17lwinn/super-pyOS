@@ -3,6 +3,7 @@ import os_core as core
 import importlib
 import sys
 from os_services import *
+import os
 
 try:
   importlib.import_module("os_core")
@@ -13,7 +14,7 @@ else:
   print("")
 
 def main():
-  com = input("> ")
+  com = input(os.getcwd() + "> ")
   command.executeCommand(com)
 
 while True:
