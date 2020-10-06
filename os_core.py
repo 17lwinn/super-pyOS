@@ -13,3 +13,14 @@ def registerService(service):
   else:  
     service = importlib.import_module(service)
     service.init()
+    
+def removeService(service):
+  servicefile = open("os_services.py", "r")
+  
+  lines = servicefile.readlines()
+
+  new_file = open("os_services.py", "w")
+  for line in lines:
+      if line.strip("\n") != "core.registerService(" + service + ")":
+        new_file.write(line)
+        new_file.close()
