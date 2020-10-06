@@ -4,6 +4,10 @@ import sys
 # command handler for the OS
 
 def executeCommand(command):
+  
+  if command == "?":
+    print("makeService = make a new system service, requires restart")
+    
   if command == "makeService":
     import importlib
     name = input("filename without .py: ")
@@ -19,7 +23,8 @@ def executeCommand(command):
     except AttributeError:
       print("init not found, aborting...")
     else:
-      f = open("os_service.py", "a")
+      f = open("os_services.py", "a")
+      f.write('core.registerService("' + name + '")')
     
   if command == "test":
     print("hiya")
@@ -32,3 +37,6 @@ def executeCommand(command):
       
   if command == "exit":
     sys.exit(0)
+  
+  else:
+    print("\033[1;37;41m" + " Error 1E: CommandNotFound: " + command + " \033[0m")

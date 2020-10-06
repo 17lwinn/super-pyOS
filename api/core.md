@@ -22,7 +22,7 @@ def init():
   sys.exit("hiya!")
 ```
 
-- os_services
+- os_services.py
 
 ```python
 # add them below this line
