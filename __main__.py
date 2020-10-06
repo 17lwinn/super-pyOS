@@ -12,5 +12,9 @@ except ImportError:
 else:
   print("")
 
-com = input("> ")
-command.executeCommand(com)
+def main():
+  com = input("> ")
+  command.executeCommand(com)
+
+if __name__ == '__main__':
+  main()
