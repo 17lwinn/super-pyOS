@@ -14,10 +14,8 @@ except ImportError:
 else:
   print("")
 
-print("")
 print("python version: " + '\x1b[6;30;47m ' + platform.python_version() + ' \x1b[0m')
 print("system version: " + '\x1b[6;30;47m ' + platform.system(), platform.version() + ' \x1b[0m')
-print("\x1b[0m")
 def main():
   com = input(os.getcwd() + "> ")
   command.executeCommand(com)

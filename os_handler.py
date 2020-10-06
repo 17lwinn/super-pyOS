@@ -38,5 +38,5 @@ def executeCommand(command):
   if command == "exit":
     sys.exit(0)
   
-  else:
-    print("\033[1;37;41m" + " Error 1E: CommandNotFound: " + command + " \033[0m")
+  #else:
+  #  print("\033[1;37;41m" + " Error 1E: CommandNotFound: " + command + " \033[0m")
