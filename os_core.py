@@ -18,5 +18,5 @@ def loadDrive(drive):
   try:
     os.chdir(drive)
   except OSError:
-    print("\033[1;37;41m" + " Error 1D: ServiceNotFound: " + service + " \033[0m")
+    print("\033[1;37;41m" + " Error 1F: DriveNotFound: " + drive + " \033[0m")
     

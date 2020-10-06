@@ -1,5 +1,7 @@
 # Core API guide
 
+## service modules
+
 ```python
 core.registerService("package")
 ```
@@ -29,3 +31,15 @@ def init():
 
 core.registerService("example")
 ```
+
+------------------
+
+## External drives
+```python
+core.loadDrive("F:\\")
+```
+
+> Load an external drive- **experimental**
+> Read and write from the files in your drive
+
+May accept **F:\\\\** or **F:**
