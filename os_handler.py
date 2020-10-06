@@ -18,12 +18,17 @@ def executeCommand(command):
       service.init()
     except AttributeError:
       print("init not found, aborting...")
-
+    else:
+      f = open("os_service.py", "a")
     
   if command == "test":
     print("hiya")
+    
   if command == "ys":
     ys = input("install youngshell? y/n: ")
     
     if ys == "y":
       print("installing modules for cloning: ")
+      
+  if command == "exit":
+    sys.exit(0)

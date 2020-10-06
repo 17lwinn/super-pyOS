@@ -16,5 +16,5 @@ def main():
   com = input("> ")
   command.executeCommand(com)
 
-if __name__ == '__main__':
+while True:
   main()
