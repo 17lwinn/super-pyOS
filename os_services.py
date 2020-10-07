@@ -7,8 +7,8 @@ import os
 #--------------------------------------------------------------------------
 # Core Services
 
-
-core.registerService("os_process")
+# os_process module is no longer to be started as a "service" and is the core process manager, thus doesn't need to be registered as a service.
+# core.registerService("os_process")
 
 
 

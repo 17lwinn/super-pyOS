@@ -6,13 +6,13 @@ import os_handler as command
 #without some sort of identification that they are from the system, the process will be ended before it could cause damage to the system 
 reservedProcessIds = list(range(1,5))
 
-class process:
+class Process:
   name = ""
   
-  def init(self, name, proc, ID):
+  def __init__(self, name, proc, ID):
     self.name = name
     for reservedId in reservedProcessIds:
       if reservedId == ID:
         del self.name
-x = process("a", "b", 1)
+x = Process("a", "b", 1)
 print(x.name)
