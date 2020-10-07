@@ -9,7 +9,7 @@ reservedProcessIds = list(range(1,5))
 class process:
   name = ""
   
-  def __init__(self, name, proc, ID):
+  def init(self, name, proc, ID):
     self.name = name
     for reservedId in reservedProcessIds:
       if reservedId == ID:
