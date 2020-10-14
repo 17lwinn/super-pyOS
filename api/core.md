@@ -1,5 +1,10 @@
 # Core API guide
 
+Importing
+
+```python
+import os_core as core
+```
 ## service modules
 
 ```python
@@ -42,4 +47,4 @@ core.loadDrive("F:\\")
 > Load an external drive- **experimental**
 > Read and write from the files in your drive
 
-May accept **F:\\\\** or **F:**
+May accept if typed like: **F:\\\\** or **F:**

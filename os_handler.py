@@ -4,11 +4,10 @@ import sys
 # command handler for the OS
 
 def executeCommand(command):
-  
   if command == "?":
     print("makeService = make a new system service, requires restart")
     
-  if command == "makeService":
+  elif command == "makeService":
     import importlib
     name = input("filename without .py: ")
     print("checking code can be imported...")
@@ -26,17 +25,22 @@ def executeCommand(command):
       f = open("os_services.py", "a")
       f.write('core.registerService("' + name + '")')
     
-  if command == "test":
+  elif command == "test":
     print("hiya")
     
-  if command == "ys":
+  elif command == "ys":
     ys = input("install youngshell? y/n: ")
     
     if ys == "y":
       print("installing modules for cloning: ")
-      
-  if command == "exit":
+      os.system("git clone https://github.com/youngchief-btw/YoungShell.git && cd YoungShell/ && bash src/Setup.sh")
+      print("installed.")
+  elif command == "gl":
+    gl = input("install glitcxCLI? y/n: ")
+    
+    if gl == "y":
+      print("installing: ")
+      os.system("curl glitcxcli.glitch.me | bash")
+      print("installed.")
+  elif command == "exit":
     sys.exit(0)
-  
-  #else:
-  #  print("\033[1;37;41m" + " Error 1E: CommandNotFound: " + command + " \033[0m")
