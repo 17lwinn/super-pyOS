@@ -15,9 +15,9 @@ else:
   print("")
 
 print("python version: " + '\x1b[6;30;47m ' + platform.python_version() + ' \x1b[0m')
-print("system version: " + '\x1b[6;30;47m ' + platform.system(), platform.version() + ' \x1b[0m')
+print("system version: " + '\x1b[6;30;47m ' + '1.0.3' + ' \x1b[0m')
 def main():
-  com = input(os.getcwd() + "> ")
+  com = input("\033[1;35;40m" + " @" + user + ' \x1b[0m' + os.getcwd() + "> ")
   command.executeCommand(com)
 
 while True:

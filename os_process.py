@@ -14,5 +14,3 @@ class Process:
     for reservedId in reservedProcessIds:
       if reservedId == ID:
         del self.name
-x = Process("a", "b", 1)
-print(x.name)
