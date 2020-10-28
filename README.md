@@ -21,3 +21,7 @@ The script looks for the core file, then the core looks for the handler and othe
 ## Our quest
 
 We want to create an open-source pseudoOS for anyone to enjoy, anywhere and everywhere on any operating system with python installed.
+
+-----
+
+[![Stargazers repo roster for @17lwinn/super-pyOS](https://reporoster.com/stars/17lwinn/super-pyOS)](https://github.com/17lwinn/super-pyOS/stargazers)
